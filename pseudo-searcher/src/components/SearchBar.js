@@ -3,11 +3,10 @@
  import React from 'react';
  class SearchBar extends React.Component{
      state={term:''};
-     onFormSubmit(event){
+     onFormSubmit=event=>{
          event.preventDefault(); // nigdy wlaciwie nie chcemy z eby sie odswiezalo(czeste)
          console.log(this.state.term);//problem z this
-         //!!!!!!!!!!! PROBLEM Z THIS !!! czesty 
-         
+        //naprawilem problem         
      }
      render(){
          //nie chcemy trzymac info w DOM, stad ten refactroing
