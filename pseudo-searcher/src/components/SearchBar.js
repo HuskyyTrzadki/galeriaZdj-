@@ -5,7 +5,7 @@
      state={term:''};
      onFormSubmit=event=>{
          event.preventDefault(); // nigdy wlaciwie nie chcemy z eby sie odswiezalo(czeste)
-         console.log(this.state.term);//problem z this
+         this.props.onSubmit(this.state.term);
         //naprawilem problem         
      }
      render(){
